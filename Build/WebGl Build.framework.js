@@ -1296,7 +1296,7 @@ function _emscripten_asm_const_ii(code, a0) {
  return ASM_CONSTS[code](a0);
 }
 STATIC_BASE = GLOBAL_BASE;
-STATICTOP = STATIC_BASE + 2311984;
+STATICTOP = STATIC_BASE + 2311920;
 __ATINIT__.push({
  func: (function() {
   __GLOBAL__sub_I_AccessibilityScriptingClasses_cpp();
@@ -3226,7 +3226,7 @@ __ATINIT__.push({
   ___emscripten_environ_constructor();
  })
 });
-var STATIC_BUMP = 2311984;
+var STATIC_BUMP = 2311920;
 Module["STATIC_BASE"] = STATIC_BASE;
 Module["STATIC_BUMP"] = STATIC_BUMP;
 var tempDoublePtr = STATICTOP;
@@ -14621,8 +14621,8 @@ function nullFunc_vifii(x) {
  err("Build with ASSERTIONS=2 for more info.");
  abort(x);
 }
-function nullFunc_vifiiiiiiiiiiiiiiiiiiiiiiiii(x) {
- err("Invalid function pointer called with signature 'vifiiiiiiiiiiiiiiiiiiiiiiiii'. Perhaps this is an invalid value (e.g. caused by calling a virtual method on a NULL pointer)? Or calling a function with an incorrect type, which will fail? (it is worth building your source files with -Werror (warnings are errors), as warnings can indicate undefined behavior which can cause this)");
+function nullFunc_vifiiiiiiiiiiiiiiiiiiiiiiiiii(x) {
+ err("Invalid function pointer called with signature 'vifiiiiiiiiiiiiiiiiiiiiiiiiii'. Perhaps this is an invalid value (e.g. caused by calling a virtual method on a NULL pointer)? Or calling a function with an incorrect type, which will fail? (it is worth building your source files with -Werror (warnings are errors), as warnings can indicate undefined behavior which can cause this)");
  err("Build with ASSERTIONS=2 for more info.");
  abort(x);
 }
@@ -16258,10 +16258,10 @@ function invoke_vifii(index, a1, a2, a3, a4) {
   Module["setThrew"](1, 0);
  }
 }
-function invoke_vifiiiiiiiiiiiiiiiiiiiiiiiii(index, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15, a16, a17, a18, a19, a20, a21, a22, a23, a24, a25, a26, a27) {
+function invoke_vifiiiiiiiiiiiiiiiiiiiiiiiiii(index, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15, a16, a17, a18, a19, a20, a21, a22, a23, a24, a25, a26, a27, a28) {
  var sp = stackSave();
  try {
-  Module["dynCall_vifiiiiiiiiiiiiiiiiiiiiiiiii"](index, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15, a16, a17, a18, a19, a20, a21, a22, a23, a24, a25, a26, a27);
+  Module["dynCall_vifiiiiiiiiiiiiiiiiiiiiiiiiii"](index, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15, a16, a17, a18, a19, a20, a21, a22, a23, a24, a25, a26, a27, a28);
  } catch (e) {
   stackRestore(sp);
   if (typeof e !== "number" && e !== "longjmp") throw e;
@@ -17009,7 +17009,7 @@ Module.asmLibraryArg = {
  "nullFunc_viffiii": nullFunc_viffiii,
  "nullFunc_vifi": nullFunc_vifi,
  "nullFunc_vifii": nullFunc_vifii,
- "nullFunc_vifiiiiiiiiiiiiiiiiiiiiiiiii": nullFunc_vifiiiiiiiiiiiiiiiiiiiiiiiii,
+ "nullFunc_vifiiiiiiiiiiiiiiiiiiiiiiiiii": nullFunc_vifiiiiiiiiiiiiiiiiiiiiiiiiii,
  "nullFunc_vii": nullFunc_vii,
  "nullFunc_viid": nullFunc_viid,
  "nullFunc_viidi": nullFunc_viidi,
@@ -17203,7 +17203,7 @@ Module.asmLibraryArg = {
  "invoke_viffiii": invoke_viffiii,
  "invoke_vifi": invoke_vifi,
  "invoke_vifii": invoke_vifii,
- "invoke_vifiiiiiiiiiiiiiiiiiiiiiiiii": invoke_vifiiiiiiiiiiiiiiiiiiiiiiiii,
+ "invoke_vifiiiiiiiiiiiiiiiiiiiiiiiiii": invoke_vifiiiiiiiiiiiiiiiiiiiiiiiiii,
  "invoke_vii": invoke_vii,
  "invoke_viid": invoke_viid,
  "invoke_viidi": invoke_viidi,
@@ -24088,10 +24088,10 @@ var dynCall_vifii = Module["dynCall_vifii"] = (function() {
  assert(!runtimeExited, "the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)");
  return Module["asm"]["dynCall_vifii"].apply(null, arguments);
 });
-var dynCall_vifiiiiiiiiiiiiiiiiiiiiiiiii = Module["dynCall_vifiiiiiiiiiiiiiiiiiiiiiiiii"] = (function() {
+var dynCall_vifiiiiiiiiiiiiiiiiiiiiiiiiii = Module["dynCall_vifiiiiiiiiiiiiiiiiiiiiiiiiii"] = (function() {
  assert(runtimeInitialized, "you need to wait for the runtime to be ready (e.g. wait for main() to be called)");
  assert(!runtimeExited, "the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)");
- return Module["asm"]["dynCall_vifiiiiiiiiiiiiiiiiiiiiiiiii"].apply(null, arguments);
+ return Module["asm"]["dynCall_vifiiiiiiiiiiiiiiiiiiiiiiiiii"].apply(null, arguments);
 });
 var dynCall_vii = Module["dynCall_vii"] = (function() {
  assert(runtimeInitialized, "you need to wait for the runtime to be ready (e.g. wait for main() to be called)");
